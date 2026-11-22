@@ -1,0 +1,98 @@
+/* The look of the extension's pages: calm, system fonts, light and dark. */
+:root {
+    color-scheme: light dark;
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --border: #e3e6eb;
+    --text: #1c2030;
+    --text-muted: #5d6475;
+    --accent: #4a52c4;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #14161c;
+        --surface: #1c1f27;
+        --border: #2c303a;
+        --text: #e7e9ef;
+        --text-muted: #9ea4b3;
+        --accent: #9aa2ff;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 48px 16px 64px;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background-color: var(--surface);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.moon {
+    flex-shrink: 0;
+    fill: var(--accent);
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    margin: 32px 0 8px;
+    font-size: 19px;
+}
+
+p,
+ul {
+    margin: 0 0 12px;
+}
+
+.muted {
+    color: var(--text-muted);
+}
+
+a {
+    color: var(--accent);
+}
+
+nav {
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+}
