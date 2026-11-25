@@ -15,12 +15,13 @@
                 </svg>
                 <h1>Reveria privacy policy</h1>
             </header>
-            <p class="muted">Last updated: November 8, 2026</p>
+            <p class="muted">Last updated: November 22, 2026</p>
 
             <p>
                 Reveria is a browser extension that saves your open tabs and brings them back when you need them. It has
-                no server. Nothing you save leaves your device through Reveria, and its developer receives no data about
-                you or your use of it.
+                no server, and its developer receives no data about you or your use of it. What you save stays in your
+                browser. It leaves your device only if you turn on sync, and then it goes to your own Google Drive and
+                nowhere else.
             </p>
 
             <h2>What Reveria keeps</h2>
@@ -48,12 +49,59 @@
                     the browser carries them to your other devices with the rest of your browser data, under your
                     browser account. Saved tabs are not synced this way.
                 </li>
+                <li>
+                    Only if you turn on sync: a copy of your saved tabs, groups and folders is also kept in your own
+                    Google Drive. See the next section.
+                </li>
                 <li>Site icons in the list come from the browser's own cache; no request is sent for them.</li>
             </ul>
 
+            <h2>Sync with Google Drive</h2>
+            <p>
+                Sync is off until you turn it on in the settings with "Connect Google Drive". It keeps the same list in
+                every browser where you connect the same Google account.
+            </p>
+            <ul>
+                <li>
+                    <strong>What goes to Google:</strong> one file with your saved tabs, groups and folders (addresses,
+                    titles, times and the names you gave), and the notes Reveria needs to tell which change is newer.
+                    Your settings are not in it.
+                </li>
+                <li>
+                    <strong>Where it is kept:</strong> in the app data folder of your own Google Drive, a hidden folder
+                    that only Reveria can open. Reveria cannot see or change any other file in your Drive.
+                </li>
+                <li>
+                    <strong>What Reveria gets from Google:</strong> permission to use that one folder, and the email
+                    address of the account you connected, which is shown in the settings and kept in your browser so you
+                    can tell which account is syncing. A sign-in key that lasts about an hour is kept in the browser's
+                    memory and forgotten when the browser closes.
+                </li>
+                <li>
+                    <strong>Who can read it:</strong> you, in the browsers you connected. The file travels directly
+                    between your browser and Google; it does not pass through the developer, who has no access to it.
+                    Google keeps it under its own privacy policy, like the rest of your Drive.
+                </li>
+                <li>
+                    <strong>Turning it off:</strong> "Turn off sync" stops syncing in that browser and leaves both
+                    copies as they are. "Delete the copy in Google Drive" removes the file from your Drive and takes
+                    back the permission you gave. You can also remove Reveria at any time under "Third-party apps and
+                    services" in your Google account.
+                </li>
+            </ul>
+            <p>
+                Reveria's use and transfer of information received from Google APIs adheres to the
+                <a href="https://developers.google.com/terms/api-services-user-data-policy"
+                    >Google API Services User Data Policy</a
+                >, including the Limited Use requirements.
+            </p>
+
             <h2>What Reveria does not do</h2>
             <ul>
-                <li>It does not send your data anywhere, to its developer or to anyone else.</li>
+                <li>
+                    It does not send your data to its developer or to anyone else. With sync on, your list goes to your
+                    own Google Drive and nowhere else.
+                </li>
                 <li>It has no analytics, no tracking and no ads, and it does not sell or share data.</li>
                 <li>It does not load or run code from the internet.</li>
                 <li>It does not use your data for anything but the features you see.</li>
@@ -70,7 +118,9 @@
             <p>
                 Delete a tab, group or folder from the list: it stays in the trash for 30 days, then it is removed for
                 good. "Delete all saved tabs" in the settings moves everything to the trash, and you can empty the trash
-                at any time. Removing the extension removes everything it stored on the device.
+                at any time. Removing the extension removes everything it stored on the device. If you used sync, the
+                copy in your Google Drive stays until you delete it with "Delete the copy in Google Drive" in the
+                settings, or under "Manage apps" in the settings of Google Drive.
             </p>
 
             <h2>Permissions</h2>
@@ -87,6 +137,8 @@
                     <strong>Context menus:</strong> for "Save this tab to Reveria" and the other right-click menu items.
                 </li>
                 <li><strong>Favicon:</strong> to show site icons from the browser's cache.</li>
+                <li><strong>Identity:</strong> to open Google's sign-in window when you turn on sync.</li>
+                <li><strong>Alarms:</strong> to sync every few minutes while sync is on.</li>
             </ul>
 
             <h2>Chrome Web Store user data policy</h2>
@@ -97,8 +149,8 @@
 
             <h2>Changes</h2>
             <p>
-                If Reveria ever offers to sync your saved tabs, it will be something you turn on, and this page will be
-                updated before that feature ships. Every change to this policy is posted here with a new date.
+                November 22, 2026: added sync through your own Google Drive, which is off until you turn it on. Every
+                change to this policy is posted here with a new date.
             </p>
 
             <h2>Questions</h2>

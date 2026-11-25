@@ -15,12 +15,13 @@
                 </svg>
                 <h1>Reveria gizlilik politikası</h1>
             </header>
-            <p class="muted">Son güncelleme: 8 Kasım 2026</p>
+            <p class="muted">Son güncelleme: 22 Kasım 2026</p>
 
             <p>
                 Reveria, açık sekmelerini kaydedip ihtiyaç duyduğunda geri açan bir tarayıcı eklentisidir. Bir sunucusu
-                yoktur. Kaydettiğin hiçbir şey Reveria aracılığıyla cihazından çıkmaz; geliştiricisine senin ya da
-                eklentiyi nasıl kullandığın hakkında hiçbir veri gelmez.
+                yoktur; geliştiricisine senin ya da eklentiyi nasıl kullandığın hakkında hiçbir veri gelmez.
+                Kaydettiklerin tarayıcında kalır. Cihazından yalnızca senkronizasyonu açarsan çıkar; o zaman da kendi
+                Google Drive'ına gider, başka hiçbir yere gitmez.
             </p>
 
             <h2>Reveria neleri saklar</h2>
@@ -52,14 +53,63 @@
                     Kaydedilen sekmeler bu yolla senkronlanmaz.
                 </li>
                 <li>
+                    Yalnızca senkronizasyonu açarsan: kayıtlı sekmelerinin, gruplarının ve klasörlerinin bir kopyası
+                    kendi Google Drive'ında da tutulur. Sonraki bölüme bak.
+                </li>
+                <li>
                     Listedeki site simgeleri tarayıcının kendi önbelleğinden gelir; bunlar için hiçbir istek
                     gönderilmez.
                 </li>
             </ul>
 
+            <h2>Google Drive ile senkronizasyon</h2>
+            <p>
+                Senkronizasyon, ayarlardan "Google Drive'a bağlan" diyerek açana kadar kapalıdır. Aynı Google hesabını
+                bağladığın her tarayıcıda aynı listeyi tutar.
+            </p>
+            <ul>
+                <li>
+                    <strong>Google'a ne gider:</strong> kayıtlı sekmelerini, gruplarını ve klasörlerini (adresler,
+                    başlıklar, zamanlar ve verdiğin adlar) ve Reveria'nın hangi değişikliğin daha yeni olduğunu anlaması
+                    için gereken notları içeren tek bir dosya. Ayarların bu dosyada yoktur.
+                </li>
+                <li>
+                    <strong>Nerede tutulur:</strong> kendi Google Drive'ının uygulama verisi klasöründe; bu, yalnızca
+                    Reveria'nın açabildiği gizli bir klasördür. Reveria Drive'ındaki başka hiçbir dosyayı göremez ve
+                    değiştiremez.
+                </li>
+                <li>
+                    <strong>Reveria Google'dan ne alır:</strong> o tek klasörü kullanma izni ve bağladığın hesabın
+                    e-posta adresi. Adres, hangi hesabın senkronlandığını görebilmen için ayarlarda gösterilir ve
+                    tarayıcında saklanır. Yaklaşık bir saat geçerli olan giriş anahtarı tarayıcının belleğinde tutulur
+                    ve tarayıcı kapanınca unutulur.
+                </li>
+                <li>
+                    <strong>Kim okuyabilir:</strong> bağladığın tarayıcılarda sen. Dosya doğrudan tarayıcın ile Google
+                    arasında gidip gelir; geliştiriciden geçmez ve geliştiricinin ona erişimi yoktur. Google onu,
+                    Drive'ının geri kalanı gibi kendi gizlilik politikasına göre saklar.
+                </li>
+                <li>
+                    <strong>Kapatmak:</strong> "Senkronu kapat" o tarayıcıda senkronizasyonu durdurur ve iki kopyayı da
+                    olduğu gibi bırakır. "Google Drive'daki kopyayı sil" dosyayı Drive'ından kaldırır ve verdiğin izni
+                    geri alır. Reveria'yı Google hesabındaki "Üçüncü taraf uygulamalar ve hizmetler" bölümünden de
+                    istediğin zaman kaldırabilirsin.
+                </li>
+            </ul>
+            <p>
+                Reveria'nın Google API'lerinden aldığı bilgileri kullanması ve aktarması, Sınırlı Kullanım (Limited Use)
+                şartları dahil
+                <a href="https://developers.google.com/terms/api-services-user-data-policy"
+                    >Google API Hizmetleri Kullanıcı Verisi Politikası</a
+                >'na uygundur.
+            </p>
+
             <h2>Reveria neleri yapmaz</h2>
             <ul>
-                <li>Verilerini hiçbir yere, ne geliştiricisine ne başka birine gönderir.</li>
+                <li>
+                    Verilerini ne geliştiricisine ne başka birine gönderir. Senkronizasyon açıkken listen kendi Google
+                    Drive'ına gider, başka hiçbir yere gitmez.
+                </li>
                 <li>Analiz, izleme ya da reklam içermez; veri satmaz, paylaşmaz.</li>
                 <li>İnternetten kod indirip çalıştırmaz.</li>
                 <li>Verilerini gördüğün özelliklerden başka bir iş için kullanmaz.</li>
@@ -76,7 +126,9 @@
             <p>
                 Listeden sildiğin sekme, grup ya da klasör 30 gün çöp kutusunda kalır, sonra kalıcı olarak silinir.
                 Ayarlardaki "Tüm kayıtlı sekmeleri sil" her şeyi çöp kutusuna taşır; çöp kutusunu istediğin zaman
-                boşaltabilirsin. Eklentiyi kaldırmak, cihazda sakladığı her şeyi siler.
+                boşaltabilirsin. Eklentiyi kaldırmak, cihazda sakladığı her şeyi siler. Senkronizasyonu kullandıysan
+                Google Drive'ındaki kopya, ayarlardaki "Google Drive'daki kopyayı sil" ile ya da Google Drive
+                ayarlarındaki "Uygulamaları yönet" bölümünden silene kadar kalır.
             </p>
 
             <h2>İzinler</h2>
@@ -94,6 +146,8 @@
                     için.
                 </li>
                 <li><strong>Favicon:</strong> site simgelerini tarayıcının önbelleğinden göstermek için.</li>
+                <li><strong>Kimlik:</strong> senkronizasyonu açtığında Google'ın giriş penceresini açmak için.</li>
+                <li><strong>Alarmlar:</strong> senkronizasyon açıkken birkaç dakikada bir senkronlamak için.</li>
             </ul>
 
             <h2>Chrome Web Store kullanıcı verisi politikası</h2>
@@ -104,9 +158,8 @@
 
             <h2>Değişiklikler</h2>
             <p>
-                Reveria bir gün kayıtlı sekmelerini senkronlamayı önerirse bu senin açacağın bir özellik olacak ve bu
-                sayfa o özellik gelmeden önce güncellenecek. Bu politikadaki her değişiklik yeni bir tarihle burada
-                yayımlanır.
+                22 Kasım 2026: kendi Google Drive'ın üzerinden senkronizasyon eklendi; sen açana kadar kapalıdır. Bu
+                politikadaki her değişiklik yeni bir tarihle burada yayımlanır.
             </p>
 
             <h2>Sorular</h2>
